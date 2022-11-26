@@ -54,7 +54,7 @@ void StudGroup::Create()
     }
     if (i == MAX) cout<<"Место в группе закончилось."<<endl;
 }
-void StudGroup::Find(char* FindName, int key)
+void StudGroup::Find(char* FindName)
 {
     bool inf = 0;
         for (int i = 0; i < MAX; i++)
@@ -99,6 +99,7 @@ int main()
 
         case 2: printf("Введите фамилию: ");
            cin>>FindName;
+                cout<<endl;
             Group1.Find(FindName); 
             break;
         
